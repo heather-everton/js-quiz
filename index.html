@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Codinig Quiz</title>
+    <link rel="stylesheet" href="assets/sytle.css" />
+</head>
+<body>
+    <div class="container">
+        <div id="home" class="flex-center flex-column">
+            <h1>JavaScript Coding Quiz</h1>
+            <button class="btn" id="start">Take the Quiz</button>
+            <!-- <a class="btn" id="start" href="/quiz.html">Take the Quiz</a> -->
+            <button class="btn" id="hsbtn">HighScores</button>
+            <!-- <a class="btn" href="/highscores.html">High Scores</a> -->
+            <!-- <h2 id="countdown"></h2> -->
+            <p id="main"></p>
+        </div>
+        <div id="quiz" class="hidden">
+            <h2 id="countdown"></h2>
+            <h2 id="question">What is the answer to this quetion?</h2>
+            <div id="answerContainer" class="answer-container"></div>
+            <div id="result"></div>
+        </div>
+        <div id="score" class="hidden">
+            <h2>All Done!</h2>
+            <h3 id="finalScore">Your final score is</h3>
+        </div>  
+        <div id="form" class="hidden">
+            <p>Submit your score!</p>
+                <form id="score-form">
+                    <div class="form-group">
+                        <input type="text" id="initials" name="score-initials" class="text-input" placeholder="Enter Initials" />
+                    </div>
+                    <div class="form-group">
+                        <button class="btn" id="submitScore" type="button" draggable="true">Submit</button>
+                    </div>
+                </form>
+        </div>  
+        <div id="highscores" class="hidden"> 
+            <section class="score-list-wrapper">
+                <h2 class="list-title">High Scores</h2>
+                <ul class="score-list" id="score-list"></ul>
+            </section>
+        </div>
+    </div>
+    <script src="./assets/script.js"></script>
+</body>
+</html>
